@@ -14,10 +14,10 @@ function isPrime(n) {
 
     return true;
 }
+
 function twinPrime(n1, n2) {
     return (isPrime(n1) && isPrime(n2));
 }
-console.log('ok')
 
 for (let i = BigInt(0); i >= 0; i++) {
     if (twinPrime(i, i + BigInt(2))) {
