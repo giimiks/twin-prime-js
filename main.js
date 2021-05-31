@@ -1,6 +1,5 @@
 const fs = require('fs')
 function isPrime(n) {
-    // Corner cases
     n = BigInt(n)
     if (n <= BigInt(1))
         return false;
