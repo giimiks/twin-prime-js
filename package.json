@@ -1,0 +1,11 @@
+{
+  "name": "twin-primes",
+  "version": "1.0.0",
+  "description": "Writes down every pair of prime numbers, which are apart by 2 (5 - 7; 41 - 43; etc...)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "giimiks",
+  "license": "ISC"
+}
