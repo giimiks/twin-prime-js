@@ -1,14 +1,14 @@
 const fs = require('fs')
 function isPrime(n) {
     n = BigInt(n)
-    if (n <= BigInt(1))
+    if (n <= 1n)
         return false;
-    if (n <= BigInt(3))
+    if (n <= 3n)
         return true;
-    if (n % BigInt(2) == BigInt(0) || n % BigInt(3) == BigInt(0))
+    if (n % 2n == 0n || n % 3n == 0n)
         return false
-    for (let i = BigInt(5); i * i <= n; i = i + BigInt(6))
-        if (n % i == BigInt(0) || n % (i + BigInt(2)) == BigInt(0))
+    for (let i = 5n; i * i <= n; i = i + 6n)
+        if (n % i == 0n || n % (i + 2n) == 0n)
             return false;
 
     return true;
